@@ -32,12 +32,12 @@ def click(event):
 
 # --------- Main Window Setup ---------
 root = tk.Tk()
-root.title("hovaňajs aplykájšon")
+root.title("Launcher Application")
 root.geometry("360x500")
 root.resizable(False, False)
 
 # --------- Label ---------
-hello_label = tk.Label(root, text="Test Application", font=("Arial", 20))
+hello_label = tk.Label(root, text="Launcher", font=("Arial", 20))
 hello_label.pack(pady=10)
 
 # --------- Link Buttons ---------
