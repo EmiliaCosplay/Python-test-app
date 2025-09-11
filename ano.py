@@ -33,7 +33,7 @@ def click(event):
 # --------- Main Window Setup ---------
 root = tk.Tk()
 root.title("Launcher Application")
-root.geometry("360x500")
+root.geometry("800x600")
 root.resizable(False, False)
 
 # --------- Label ---------
