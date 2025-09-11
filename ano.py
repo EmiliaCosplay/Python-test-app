@@ -30,35 +30,24 @@ def click(event):
     else:
         calc_entry.insert(tk.END, button_text)
 
-# --------- Easter Egg Function ---------
-def show_easter_egg():
-    messagebox.showinfo("Easter Egg 🥚", "Roman je kokot")
-
 # --------- Main Window Setup ---------
 root = tk.Tk()
 root.title("hovaňajs aplykájšon")
 root.geometry("360x500")
 root.resizable(False, False)
 
-# Keyboard shortcut: Ctrl+E triggers Easter egg
-root.bind('<Control-e>', lambda e: show_easter_egg())
-
 # --------- Label ---------
-hello_label = tk.Label(root, text="velky bindis", font=("Arial", 20))
+hello_label = tk.Label(root, text="Test Application", font=("Arial", 20))
 hello_label.pack(pady=10)
 
 # --------- Link Buttons ---------
 button_frame = tk.Frame(root)
 button_frame.pack(pady=5)
 
-tk.Button(button_frame, text="zde hledas hovna", width=25, command=open_google).pack(pady=3)
-tk.Button(button_frame, text="Filip Zima", width=25, command=open_youtube).pack(pady=3)
+tk.Button(button_frame, text="Google", width=25, command=open_google).pack(pady=3)
+tk.Button(button_frame, text="Cringe", width=25, command=open_youtube).pack(pady=3)
 tk.Button(button_frame, text="doprava.dpmdas.cz", width=25, command=open_dpmdas).pack(pady=3)
-tk.Button(button_frame, text="zde zavres", width=25, command=root.destroy).pack(pady=10)
-
-# --------- Hidden Easter Egg Button (optional) ---------
-# Uncomment below to show an actual visible button
-tk.Button(root, text="???", command=show_easter_egg).pack(pady=5)
+tk.Button(button_frame, text="Close", width=25, command=root.destroy).pack(pady=10)
 
 # --------- Calculator UI ---------
 calc_label = tk.Label(root, text="Calculator", font=("Arial", 14, "bold"))
