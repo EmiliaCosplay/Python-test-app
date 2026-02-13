@@ -9,7 +9,7 @@ def open_google():
     webbrowser.open("https://www.google.com")
 
 def open_youtube():
-    webbrowser.open("https://www.youtube.com/@FIZIstyle")
+    webbrowser.open("https://www.youtube.com")
 
 def open_dpmdas():
     webbrowser.open("https://doprava.dpmdas.cz/")
